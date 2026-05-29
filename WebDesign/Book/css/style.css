@@ -1,0 +1,166 @@
+header{
+    border-bottom: 1px solid black;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    text-align: end;
+}
+
+header li:hover {
+    color: #ec020b;
+    cursor: pointer;
+}
+
+.detail {
+    display: flex;
+    gap: 30px; /* 좌우 간격 */
+
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.image-box {
+    width: 40%;
+    padding-right: 30px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.text-box {
+    width: 60%;
+    border-left: 1px solid #ccc;
+    padding-left: 45px;
+}
+
+.text-box hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+h2 {
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: end;
+    font-size: 18px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+ul{
+    list-style: none;
+}
+
+b {
+    color: #ef7d34;
+}
+
+.index {
+    font-weight: bold;
+}
+
+.info {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-left: -40px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: "Noto Serif KR", serif;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+.ver {
+    border-left: 1px solid #ccc;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between; /* 양쪽 끝으로 */
+    align-items: flex-start;
+}
+
+.btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    margin-top: 50px;
+
+    border-left: 1px solid #ccc;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 50px;
+    margin-right: 25px;
+}
+
+.buy-btn {
+    padding: 18px 30px;
+    background-color: #fdf9ed;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border-right: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.buy-btn:hover {
+    background-color: #ef7d34;
+    font-weight: bold;
+}
+
+/* 툴팁 기본 상태 (숨김) */
+.tooltip {
+    position: absolute;
+    bottom: 110%; /* 버튼 위에 표시 */
+    left: 50%;
+    transform: translateX(-50%);
+  
+    background: black;
+    color: white;
+
+    padding: 10px 14px;
+    border-radius: 3px;
+    font-size: 14px;
+
+    min-width: 140px;
+
+    opacity: 0;
+    transition: 0.2s;
+}
+
+/* hover 시 표시 */
+.soldout:hover .tooltip {
+    opacity: 1;
+}
